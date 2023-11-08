@@ -27,9 +27,9 @@ public class ReadController extends HttpServlet {
 	try {
 		ClienteDAO cDAO = new ClienteDAO();
 //		
-//		List<Cliente> clientes = cDAO.findClientes();
+	List<Cliente> clientes = cDAO.findClients();
 		
-		List <Cliente> clientes = new ArrayList<Cliente>();
+	//	List <Cliente> clientes = new ArrayList<Cliente>();
 		
 //		
 		req.setAttribute("clientes", clientes);

@@ -63,12 +63,12 @@ public void fecharConexao() {
     while (r.next()) {
         Cliente cliente = new Cliente();
         cliente = new Cliente();
-        cliente.setIdCliente(r.getInt("idCliente"));
-        cliente.setNomeCliente(r.getString("nomeCliente"));
-        cliente.setCpfCliente(r.getString("cpfCliente"));
-        cliente.setEnderecoCliente(r.getString("enderecoCliente"));
-        cliente.setTelefoneCliente(r.getString("telefoneCliente"));
-        cliente.setEmailCliente(r.getString("emailCliente"));
+        cliente.setIdCliente(r.getInt("clienteId"));
+        cliente.setNomeCliente(r.getString("nome"));
+        cliente.setCpfCliente(r.getString("cpf"));
+        cliente.setEnderecoCliente(r.getString("endereco"));
+        cliente.setTelefoneCliente(r.getString("telefone"));
+        cliente.setEmailCliente(r.getString("email"));
 
         clientes.add(cliente);
 
